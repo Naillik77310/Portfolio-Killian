@@ -172,31 +172,25 @@
                    <h7>Prérequis :</h7>
                     <ul>
                         <li>
-                            Base de PHP
+                            Bases de la programmation
                         </li>
                         <li>
-                            Base de SQL
+                            IntelliJ et kotlin opérationnels sur votre machine de dev
                         </li>
                         <li>
-                            Base de HTML/CSS
+                            Avoir fait des premiers pas avec Kotlin (mooc)
                         </li>
                     </ul>
                     <h7>Objectifs du projet</h7>
                     <ul>
                         <li>
-                            Apprendre à travailler sur la base d'un existant simple
+                            Conception et mise au point d’une logique applicative avec Kotlin et JUnit
                         </li>
                         <li>
-                            Apprendre à respecter des conventions de codage
+                            Structure de données, recherche d’un élément dans une liste
                         </li>
                         <li>
-                            Initier à une architecture 3 tiers Web simple
-                        </li>
-                        <li>
-                            Développer la créativité
-                        </li>
-                        <li>
-                            Un peu de méthodologie (user story, trello, phpcs, ...)
+                            Analyse des actions du joueur (fonction du nombre de cartes, aides à la décision)
                         </li>
                     </ul>
                 </div>
@@ -214,22 +208,104 @@
                  <img src="images/infoPays.png" class="img-fluid" alt="Nullard">
                 </div>
                 <div class="col-lg-7 col-md-7 col-12">
-                 <p>L'application est destinée à des professeurs d'histoire et de géographie.
-
+                 <p>Scénario typique d’une partie, (optionnel pour le joueur) paramétrage du jeu (par exemple choix du jeu de cartes, activation de l’aide à la recherche, …​)
+                    Lancement d’une partie (le jeu instancie un jeu de carte et tire une carte "au hasard"), que le joueur doit deviner en un nombre de proposition de cartes optimal
+                    Le joueur propose une carte
+                    Si ce n’est pas la bonne carte, alors si l’aide est activée, le joeur est informé si la carte qu’il a soumise est plus petite ou plus grande que celle à deviner. Retour en 3.
                     Elle doit permettre aux professeurs, comme aux élèves, de consulter des données géopolitiques et économiques de la planète. Ces données ont été communiquées par l'institut Official Statistics of Finland (2006).
-                    
-                    Étant donné l'âge de ces données, il faudra mettre en place un (ou plusieurs) moyen(s) de les mettre à jour.
-
-                    Les acteurs et leurs intérêts :</p>
-                    <ul>
-                        <li><strong>Enseignant</strong> : souhaite sensibiliser ses élèves à des données géoplitiques et économiques de la planète</li>
-                        <li><strong>Elève</strong> : aimerait disposer d'un outil qui réponde à ses interrogations ainsi que prendre plaisir à consulter les informations présentées</li>
-                        <li><strong>Administrateur</strong> : disposer d'une interface d'administration de l'application (gestion des utilisateurs, leurs droits)</li>
-                    </ul>
+                    Si c’est la bonne carte alors la partie se termine (passe à l’étape suivante). Le joueur peut choisir d’abandonner la partie.
+                    Le jeu affiche des éléments d’analyse (nombre de fois où le joueur a soumis une carte, ses qualités stratégiques, …​)
+                    Fin de la partie.</p>
                  </div>
             </div>
         </div>
     </section>
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="row">
+ 
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h3 class="mb-4">Projet de 2e année BTS SIO Kot-Line</h3>
+                    <p>Projet pédagogique pour étudiant apprenti développeur.</p>
+                    <a href="https://gitlab.com/alexandrepoirier69/kot-line.git" target="_blank">Lien du projet GitLab</a>
+                    <p></p>
+                    <h7>Contexte</h7>
+                    <p>La société de service SO-DEV dans laquelle vous travaillez a comme client l’entreprise Kot-Line, créatrice de ligne de vêtements.
+
+                        La société Kot-Line reçoit de la part de ses partenaires, tous les mois, 2 fichiers clients au format CSV.
+                        
+                        Afin d’exploiter ces fichiers partenaires, Kot-Line souhaite disposer d’un outil (une application web), disponible qu’aux gestionnaires, lui permettant d’intégrer les données de ces fichiers dans une base de données relationnelle.
+                        
+                        L’entreprise Kot-Line envisage de se lancer dans des produits en liens avec l’automobile.
+                        
+                        Le département R&D vous demande de concevoir un premier prototype d’application.</p>
+                 </div>
+ 
+                 <div class="col-lg-5 mx-auto col-md-6 col-12">
+                     <img src="images/geoworldLogo.png" class="img-fluid" alt="Ben's Resume HTML Template">
+                     <p></p>
+                     <img src="images/ListePays.png" class="img-fluid" alt="Ben's Resume HTML Template">
+                 </div>
+ 
+             </div>
+             <div class="row about-third">
+                 <div class="col-lg-5 col-md-() col-12">
+                  <img src="images/carteMonde.png" class=" img-fluid" alt="Accueil App">
+                  <img src="images/infoPays.png" class="img-fluid" alt="Nullard">
+                 </div>
+                 <div class="col-lg-7 col-md-7 col-12">
+                    <h3>Exemple de contrainte</h3>
+                    <h7>Réflexion d’mmplémentation des contraintes de sélection</h7>
+                  <p>Pour pallier les incohérences de valeurs entre la taille en inch et celle en cm on décide de choisir comme mesure
+                    principale de prendre celle en centimètre car le système international d’unités associer à la taille est le metre donc dans notre cas les centimètres. Pour ce faire on crée une méthode qui convertit le fichier CSV en fichier JSON et qui calcule la valeur en inch à partir de la valeur en cm et on vérifie si elle est différente à celle renseigner et si elle est
+                    différente on rentre l’individus dans un fichier anomalie avec la cause de son entré dans ce fichier.</p>
+                  </div>
+             </div>
+         </div>
+     </section>
+     <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="row">
+ 
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h3 class="mb-4">Projet de 2e année BTS SIO SushiFast</h3>
+                    <p>Projet pédagogique pour étudiant apprenti développeur.</p>
+                    <a href="" target="_blank">Lien du projet GitHub</a>
+                    <p></p>
+                    <h7>Contexte</h7>
+                    <p>La société de service SO-DEV dans laquelle vous travaillez a comme client l’entreprise Kot-Line, créatrice de ligne de vêtements.
+
+                        La société Kot-Line reçoit de la part de ses partenaires, tous les mois, 2 fichiers clients au format CSV.
+                        
+                        Afin d’exploiter ces fichiers partenaires, Kot-Line souhaite disposer d’un outil (une application web), disponible qu’aux gestionnaires, lui permettant d’intégrer les données de ces fichiers dans une base de données relationnelle.
+                        
+                        L’entreprise Kot-Line envisage de se lancer dans des produits en liens avec l’automobile.
+                        
+                        Le département R&D vous demande de concevoir un premier prototype d’application.</p>
+                 </div>
+ 
+                 <div class="col-lg-5 mx-auto col-md-6 col-12">
+                     <img src="images/geoworldLogo.png" class="img-fluid" alt="Ben's Resume HTML Template">
+                     <p></p>
+                     <img src="images/ListePays.png" class="img-fluid" alt="Ben's Resume HTML Template">
+                 </div>
+ 
+             </div>
+             <div class="row about-third">
+                 <div class="col-lg-5 col-md-() col-12">
+                  <img src="images/carteMonde.png" class=" img-fluid" alt="Accueil App">
+                  <img src="images/infoPays.png" class="img-fluid" alt="Nullard">
+                 </div>
+                 <div class="col-lg-7 col-md-7 col-12">
+                    <h3>Exemple de contrainte</h3>
+                    <h7>Réflexion d’mmplémentation des contraintes de sélection</h7>
+                  <p>Pour pallier les incohérences de valeurs entre la taille en inch et celle en cm on décide de choisir comme mesure
+                    principale de prendre celle en centimètre car le système international d’unités associer à la taille est le metre donc dans notre cas les centimètres. Pour ce faire on crée une méthode qui convertit le fichier CSV en fichier JSON et qui calcule la valeur en inch à partir de la valeur en cm et on vérifie si elle est différente à celle renseigner et si elle est
+                    différente on rentre l’individus dans un fichier anomalie avec la cause de son entré dans ce fichier.</p>
+                  </div>
+             </div>
+         </div>
+     </section>
             <!-- SCRIPTS -->
             <script src="js/jquery.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
